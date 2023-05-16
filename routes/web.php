@@ -22,7 +22,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('google/calendar', [GoogleCalendarController::class, 'redirectToProvider']);
-Route::get('google/calendar/oauth/callback', [GoogleCalendarController::class, 'oauthCallback']);
-Route::get('/google/calendar/events', [GoogleCalendarController::class, 'getEvents']);
 
